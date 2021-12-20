@@ -23,7 +23,7 @@
 
     <!--AOP事务支持-->
     <aop:config>
-        <aop:pointcut id="txPointCut" expression="execution(* com.chj.mapper.*.*(..))"/>
+        <aop:pointcut id="txPointCut" expression="execution(* com.chj.service.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
     </aop:config>
     <!--配置事务通知-->
