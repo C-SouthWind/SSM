@@ -1,7 +1,5 @@
-package com.chj.pojo;
+package com.chj.result;
 
-
-import com.chj.pojo.base.BasePojo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,8 +9,8 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-public class User extends BasePojo {
-    private String userAccount;
-    private String userPwd;
-    private String userToken;
+public class Result {
+    private int code;
+    private String msg;
+    private Object data;
 }

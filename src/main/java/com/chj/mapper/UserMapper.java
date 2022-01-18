@@ -1,16 +1,10 @@
 package com.chj.mapper;
 
 import com.chj.pojo.User;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
-
-/**
- * @author ：chj
- * @date ：Created in 2021/12/7 20:31
- * @params :
- */
+@Mapper
 public interface UserMapper {
-
-    //查询用户
-    List<User> selectUserList();
+    User getUserOne(@Param("userAccount") String userAccount,@Param("userPwd") String userPwd);
 }
